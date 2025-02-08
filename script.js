@@ -92,9 +92,8 @@ const messages = {
 
 // DOM elements
 const styleButtons = document.querySelectorAll('.style-btn');
-const messageElement = document.getElementById('message');
+const messageContainer = document.querySelector('.message-container');
 const refreshBtn = document.getElementById('refresh-btn');
-const copyBtn = document.querySelector('.copy-btn');
 
 // Current style tracking
 let currentStyle = 'fun';
@@ -117,25 +116,9 @@ styleButtons.forEach(button => {
 // Refresh button click handler
 refreshBtn.addEventListener('click', updateMessage);
 
-// Copy button click handler
-copyBtn.addEventListener('click', async () => {
-    try {
-        await navigator.clipboard.writeText(messageElement.textContent);
-        
-        // Visual feedback
-        copyBtn.classList.add('copied');
-        
-        setTimeout(() => {
-            copyBtn.classList.remove('copied');
-        }, 2000);
-    } catch (err) {
-        console.error('Failed to copy text:', err);
-    }
-});
-
 // Get random message from current style
-function getRandomMessage() {
-    const currentMessages = messages[currentStyle];
+function getRandomMessage(style) {
+    const currentMessages = messages[style];
     const availableMessages = currentMessages.filter(msg => !usedMessages.has(msg));
     
     // If we're running low on unused messages, reset the used messages
@@ -153,19 +136,46 @@ function getRandomMessage() {
 
 // Update message function
 function updateMessage() {
-    // Fade out
-    messageElement.style.opacity = '0';
+    messageContainer.classList.remove('visible');
     
     setTimeout(() => {
-        messageElement.textContent = getRandomMessage();
+        const style = document.querySelector('.style-btn.active').dataset.style;
+        const message = getRandomMessage(style);
         
-        // Fade in
-        messageElement.style.opacity = '1';
-    }, 200);
+        const messageHtml = `
+            <div class="message-card">
+                <p class="message">${message}</p>
+                <button class="copy-btn" onclick="copyMessage(this)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                    <span class="copy-text">Copied!</span>
+                </button>
+            </div>`;
+        
+        messageContainer.innerHTML = messageHtml;
+        messageContainer.classList.add('visible');
+    }, 300);
 }
 
-// Initialize
-document.addEventListener('DOMContentLoaded', () => {
-    messageElement.style.transition = 'opacity 0.2s ease';
-    updateMessage(); // Show initial message
+// Show initial message
+updateMessage();
+
+// Copy button click handler
+document.addEventListener('click', (e) => {
+    if (e.target.classList.contains('copy-btn')) {
+        try {
+            navigator.clipboard.writeText(e.target.parentNode.querySelector('.message').textContent);
+            
+            // Visual feedback
+            e.target.classList.add('copied');
+            
+            setTimeout(() => {
+                e.target.classList.remove('copied');
+            }, 2000);
+        } catch (err) {
+            console.error('Failed to copy text:', err);
+        }
+    }
 });
