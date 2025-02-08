@@ -1,52 +1,52 @@
 // Messages for each style
 const messages = {
     mystical: [
-        "You know how the universe works in mysterious ways? Well, it's telling me it's time for a new adventure ✨",
-        "My spiritual guide says our paths are meant to diverge here, but I'm grateful for our journey together 🌟",
-        "The energy between us has taught me so much, but my soul is calling me elsewhere now 🔮",
-        "I've been meditating on this, and my inner compass is pointing to a new direction 🧘‍♀️",
-        "The stars have been whispering to me lately... they say it's time for me to explore new constellations ⭐",
-        "My tarot cards have been super clear about this - it's time for both of us to write new stories 🎴",
-        "Like the phases of the moon, all things must change. Our chapter together is completing its cycle 🌙",
-        "The universe has this amazing way of guiding us, and right now it's guiding me to new horizons 🌌",
-        "My crystals have been extra chatty lately, saying it's time for a soul-level transition 💎",
-        "Just as the phoenix transforms, I feel it's time for my own metamorphosis 🦅"
+        "The universe has bigger plans for me, and I'm ready to embrace them ✨",
+        "My inner compass is pointing to new adventures, and I must follow its call 🧭",
+        "The stars are aligning to guide me on a different path 🌟",
+        "My spiritual journey is calling me to explore new horizons 🌅",
+        "Like a phoenix, it's time for me to rise and transform 🔥",
+        "The energy of change is too powerful to ignore 🌀",
+        "My soul is yearning for a new chapter in this cosmic dance ⭐",
+        "The mystic winds are whispering that it's time to move on 🍃",
+        "Following the signs that lead to my next adventure 🔮",
+        "Trust in the magic of new beginnings 🌙"
     ],
     growth: [
-        "You've helped me grow so much, but I need to spread my wings and try flying solo now 🦋",
-        "Like a plant reaching for sunlight, I need to grow in a different direction 🌱",
-        "We've had an amazing run, but my personal growth is calling me to explore new territories 🌿",
-        "I've learned so much from our time together, but now I need to apply these lessons somewhere new 📚",
-        "Just like seasons change, I feel it's time for my next chapter of growth 🍃",
-        "You know how sometimes you outgrow even your favorite sweater? That's kind of what's happening here 🧥",
-        "This isn't goodbye forever, it's just me taking a different path in my journey 🛣️",
-        "Remember how we talked about personal growth? Well, I'm taking that leap we discussed 🦘",
-        "Like a tree growing new branches, I need to expand in different directions 🌳",
-        "You've been an amazing part of my journey, but my growth path is leading me elsewhere now 🌺"
+        "Ready to spread my wings and soar to new heights 🦋",
+        "Like a seed, I need new soil to grow into something amazing 🌱",
+        "Time to chase bigger dreams and bolder adventures 🚀",
+        "Growing in different directions, but grateful for the memories 🌿",
+        "My journey of growth is taking me down a new path 🛣️",
+        "Embracing change as a chance to bloom and flourish 🌸",
+        "Sometimes growth means letting go and moving forward 🍃",
+        "Taking a leap of faith towards new opportunities 🦅",
+        "Ready to write the next chapter of my story 📖",
+        "Every ending is just a new beginning in disguise 🌅"
     ],
     timing: [
-        "You know that feeling when the timing just feels right? That's what my gut is telling me now ⏰",
-        "Life has a funny way of telling us when it's time to move on, and I'm feeling that now 🎯",
-        "They say timing is everything, and my inner clock is saying it's time for a change ⌛",
-        "Remember how we always said we'd know when it's time? Well, that time has come 🕰️",
-        "Like the perfect sunset, some things are beautiful because they don't last forever 🌅",
-        "Just as one chapter ends, another begins - and I'm feeling ready to turn the page 📖",
-        "My internal compass is pointing to 'time for change' - I've learned to trust it 🧭",
-        "Sometimes the hardest part is knowing when to say goodbye, and that moment is here 🌠",
-        "Life's rhythm is telling me it's time to dance to a different beat 💃",
-        "Like the changing of seasons, I feel it's time for my next chapter 🍂"
+        "The perfect moment to start my next adventure is now ⏰",
+        "Time to turn the page and begin a fresh chapter 📚",
+        "The clock is ticking towards exciting new beginnings ⌛",
+        "Like seasons, change comes at just the right moment 🍂",
+        "My timeline is branching into new possibilities 🌿",
+        "The moment feels right to embark on a new journey 🚶‍♂️",
+        "Time to set sail towards new horizons 🚢",
+        "Following the rhythm of life to my next destination 🎵",
+        "The timing couldn't be better for a fresh start 🌅",
+        "Life's calling me to new adventures, and I'm answering ☎️"
     ],
     fun: [
-        "My Netflix queue is giving me the side-eye for all the shows I've been neglecting 📺",
-        "My gaming character is stuck at level 1 and honestly, they're pretty mad about it 🎮",
-        "My houseplants formed a union and are demanding better work-life balance 🪴",
-        "My yoga mat filed a missing person report - time to reconnect with it! 🧘‍♀️",
-        "My passport is threatening to expire from boredom - gotta make some changes! ✈️",
-        "My guitar is getting jealous of all the time I spend typing emails 🎸",
-        "My running shoes are plotting an escape - better take them on new adventures! 👟",
-        "My art supplies are staging an intervention for my neglected creative side 🎨",
-        "My bed and I need to spend more quality time together - it's not you, it's my sleep schedule 😴",
-        "My coffee machine and I need to rekindle our morning romance ☕"
+        "Time to update my life's playlist with some fresh tunes 🎵",
+        "Plot twist: I'm off to star in my own adventure movie! 🎬",
+        "Leveling up to the next exciting stage of life 🎮",
+        "My Netflix queue is calling - time for a new show! 📺",
+        "Pressing the refresh button on life's browser 🔄",
+        "Like a DJ, I'm mixing up some new life beats 🎧",
+        "Game over here, but I've got plenty of extra lives 🎲",
+        "Time to dance to a different tune 💃",
+        "Loading next awesome chapter... Please wait! ⌛",
+        "Achievement unlocked: New life adventure! 🏆"
     ]
 };
 
