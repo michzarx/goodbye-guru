@@ -1,52 +1,52 @@
 // Messages for each style
 const messages = {
     mystical: [
-        "The universe has bigger plans for me, and I'm ready to embrace them ✨",
-        "My inner compass is pointing to new adventures, and I must follow its call 🧭",
-        "The stars are aligning to guide me on a different path 🌟",
-        "My spiritual journey is calling me to explore new horizons 🌅",
-        "Like a phoenix, it's time for me to rise and transform 🔥",
-        "The energy of change is too powerful to ignore 🌀",
-        "My soul is yearning for a new chapter in this cosmic dance ⭐",
-        "The mystic winds are whispering that it's time to move on 🍃",
-        "Following the signs that lead to my next adventure 🔮",
-        "Trust in the magic of new beginnings 🌙"
+        "My crystals told me it's time for a new adventure (they're usually right) ✨",
+        "Mercury isn't even in retrograde, but I still gotta go 🌠",
+        "Plot twist: my tarot cards say I'm the main character somewhere else 🔮",
+        "Checking my cosmic calendar... yep, time for a change! 🌙",
+        "My aura needs a change of scenery (and better lighting) 🌈",
+        "The universe is my GPS, and it's recalculating my route 🧭",
+        "My zodiac sign said 'thank u, next' 💫",
+        "Manifesting new beginnings like it's my spiritual side hustle ⭐",
+        "The full moon told me to level up, who am I to argue? 🌕",
+        "Aligning my chakras with a different timezone 🧘‍♀️"
     ],
     growth: [
-        "Ready to spread my wings and soar to new heights 🦋",
-        "Like a seed, I need new soil to grow into something amazing 🌱",
-        "Time to chase bigger dreams and bolder adventures 🚀",
-        "Growing in different directions, but grateful for the memories 🌿",
-        "My journey of growth is taking me down a new path 🛣️",
-        "Embracing change as a chance to bloom and flourish 🌸",
-        "Sometimes growth means letting go and moving forward 🍃",
-        "Taking a leap of faith towards new opportunities 🦅",
-        "Ready to write the next chapter of my story 📖",
-        "Every ending is just a new beginning in disguise 🌅"
+        "Like my houseplants, I need more room to grow (and better sunlight) 🌱",
+        "Time to repot myself into a bigger adventure 🪴",
+        "My comfort zone is getting a bit too comfy - time to stretch! 🦋",
+        "Growing faster than my succulent collection 🌵",
+        "My personal growth spurt needs more space than this office chair 🪑",
+        "Leveling up like my sourdough starter - it's alive! 🍞",
+        "My growth mindset is bigger than my current situation 🚀",
+        "Like my favorite tree, I'm branching out 🌳",
+        "This caterpillar is ready for its butterfly era 🦋",
+        "Outgrowing this space like my overwatered monstera 🌿"
     ],
     timing: [
-        "The perfect moment to start my next adventure is now ⏰",
-        "Time to turn the page and begin a fresh chapter 📚",
-        "The clock is ticking towards exciting new beginnings ⌛",
-        "Like seasons, change comes at just the right moment 🍂",
-        "My timeline is branching into new possibilities 🌿",
-        "The moment feels right to embark on a new journey 🚶‍♂️",
-        "Time to set sail towards new horizons 🚢",
-        "Following the rhythm of life to my next destination 🎵",
-        "The timing couldn't be better for a fresh start 🌅",
-        "Life's calling me to new adventures, and I'm answering ☎️"
+        "My calendar said it's time for the next episode 📅",
+        "Setting my out-of-office reply to 'permanently seeking adventure' ⏰",
+        "My watch says it's time for a life upgrade 🕰️",
+        "Scheduling a plot twist in my career timeline ⌛",
+        "My Google Calendar needs a whole new color code 📱",
+        "Time to hit fast-forward on my next chapter 🎬",
+        "My biological clock is ticking... for new adventures! 🕐",
+        "Marking this as a turning point in my life's timeline ✨",
+        "The clock struck 'follow your dreams' o'clock 🌟",
+        "Setting my life's alarm to 'new beginnings' mode 🔔"
     ],
     fun: [
-        "Time to update my life's playlist with some fresh tunes 🎵",
-        "Plot twist: I'm off to star in my own adventure movie! 🎬",
-        "Leveling up to the next exciting stage of life 🎮",
-        "My Netflix queue is calling - time for a new show! 📺",
-        "Pressing the refresh button on life's browser 🔄",
-        "Like a DJ, I'm mixing up some new life beats 🎧",
-        "Game over here, but I've got plenty of extra lives 🎲",
-        "Time to dance to a different tune 💃",
-        "Loading next awesome chapter... Please wait! ⌛",
-        "Achievement unlocked: New life adventure! 🏆"
+        "My Spotify wrapped is about to get way more interesting 🎵",
+        "Upgrading my life's software to version 2.0 💻",
+        "My Netflix algorithm needs new recommendations 🍿",
+        "Speedrunning to my next adventure 🎮",
+        "Going offline here to load new content elsewhere 🔄",
+        "Time to shuffle my life's playlist 🎧",
+        "Rage quitting this level for better gameplay 🎲",
+        "My life's podcast needs a new season 🎙️",
+        "Switching channels to find better content 📺",
+        "Achievement unlocked: Freedom Seeker Mode 🏆"
     ]
 };
 
