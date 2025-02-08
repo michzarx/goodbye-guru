@@ -92,13 +92,12 @@ const messages = {
 
 // DOM elements
 const styleButtons = document.querySelectorAll('.style-btn');
-const message1 = document.getElementById('message-1');
-const message2 = document.getElementById('message-2');
+const messageElement = document.getElementById('message');
 const refreshBtn = document.getElementById('refresh-btn');
-const copyBtns = document.querySelectorAll('.copy-btn');
+const copyBtn = document.querySelector('.copy-btn');
 
 // Current style tracking
-let currentStyle = 'humor';
+let currentStyle = 'fun';
 let usedMessages = new Set(); // Track used messages to prevent duplicates
 
 // Style button click handlers
@@ -111,80 +110,62 @@ styleButtons.forEach(button => {
         // Update style and messages
         currentStyle = button.dataset.style;
         usedMessages.clear(); // Clear used messages when changing styles
-        updateMessages();
+        updateMessage();
     });
 });
 
 // Refresh button click handler
-refreshBtn.addEventListener('click', () => {
-    updateMessages();
-});
+refreshBtn.addEventListener('click', updateMessage);
 
-// Copy buttons click handlers
-copyBtns.forEach(btn => {
-    btn.addEventListener('click', async () => {
-        const messageId = btn.dataset.message;
-        const messageText = document.getElementById(`message-${messageId}`).textContent;
+// Copy button click handler
+copyBtn.addEventListener('click', async () => {
+    try {
+        await navigator.clipboard.writeText(messageElement.textContent);
         
-        try {
-            await navigator.clipboard.writeText(messageText);
-            
-            // Visual feedback
-            btn.classList.add('copied');
-            
-            setTimeout(() => {
-                btn.classList.remove('copied');
-            }, 2000);
-        } catch (err) {
-            console.error('Failed to copy text:', err);
-        }
-    });
+        // Visual feedback
+        copyBtn.classList.add('copied');
+        
+        setTimeout(() => {
+            copyBtn.classList.remove('copied');
+        }, 2000);
+    } catch (err) {
+        console.error('Failed to copy text:', err);
+    }
 });
 
-// Get two random messages from current style
-function getTwoRandomMessages() {
+// Get random message from current style
+function getRandomMessage() {
     const currentMessages = messages[currentStyle];
     const availableMessages = currentMessages.filter(msg => !usedMessages.has(msg));
     
     // If we're running low on unused messages, reset the used messages
-    if (availableMessages.length < 2) {
+    if (availableMessages.length === 0) {
         usedMessages.clear();
+        return currentMessages[Math.floor(Math.random() * currentMessages.length)];
     }
     
-    const result = [];
-    const tempAvailable = [...availableMessages];
+    const randomIndex = Math.floor(Math.random() * availableMessages.length);
+    const selectedMessage = availableMessages[randomIndex];
+    usedMessages.add(selectedMessage);
     
-    for (let i = 0; i < 2; i++) {
-        const randomIndex = Math.floor(Math.random() * tempAvailable.length);
-        const selectedMessage = tempAvailable.splice(randomIndex, 1)[0];
-        result.push(selectedMessage);
-        usedMessages.add(selectedMessage);
-    }
-    
-    return result;
+    return selectedMessage;
 }
 
-// Update messages function
-function updateMessages() {
-    const [msg1, msg2] = getTwoRandomMessages();
-    
+// Update message function
+function updateMessage() {
     // Fade out
-    message1.style.opacity = '0';
-    message2.style.opacity = '0';
+    messageElement.style.opacity = '0';
     
     setTimeout(() => {
-        message1.textContent = msg1;
-        message2.textContent = msg2;
+        messageElement.textContent = getRandomMessage();
         
         // Fade in
-        message1.style.opacity = '1';
-        message2.style.opacity = '1';
+        messageElement.style.opacity = '1';
     }, 200);
 }
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
-    message1.style.transition = 'opacity 0.2s ease';
-    message2.style.transition = 'opacity 0.2s ease';
-    updateMessages(); // Show initial messages
+    messageElement.style.transition = 'opacity 0.2s ease';
+    updateMessage(); // Show initial message
 });

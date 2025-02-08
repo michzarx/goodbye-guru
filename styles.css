@@ -87,22 +87,30 @@ h1 {
     margin-bottom: 30px;
 }
 
+.message-container {
+    margin: 2rem 0;
+    width: 100%;
+    max-width: 600px;
+}
+
 .message-card {
-    background-color: rgba(139, 92, 246, 0.1);
-    padding: 20px;
+    background: var(--card-background);
+    padding: 1.5rem;
     border-radius: var(--border-radius);
-    position: relative;
     display: flex;
-    align-items: flex-start;
     justify-content: space-between;
-    gap: 15px;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .message {
+    margin: 0;
     font-size: 1.1rem;
+    line-height: 1.5;
     color: var(--text-color);
-    line-height: 1.6;
-    flex-grow: 1;
+    flex: 1;
 }
 
 .copy-btn {
@@ -142,31 +150,28 @@ h1 {
 }
 
 .refresh-btn {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: var(--border-radius);
+    background: var(--primary-color);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: var(--transition);
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    width: 100%;
-    padding: 15px;
-    background-color: var(--primary-color);
-    border: none;
-    border-radius: var(--border-radius);
-    font-size: 1.1rem;
-    color: white;
-    cursor: pointer;
-    transition: var(--transition);
+    gap: 0.5rem;
 }
 
 .refresh-btn:hover {
-    background-color: #7c3aed;
+    background: #7c3aed;
+    transform: translateY(-1px);
 }
 
-.refresh-btn svg {
-    transition: var(--transition);
-}
-
-.refresh-btn:hover svg {
-    transform: rotate(180deg);
+.refresh-btn:active {
+    transform: translateY(0);
 }
 
 .pro-tips {
