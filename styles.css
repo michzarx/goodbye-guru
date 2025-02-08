@@ -71,14 +71,11 @@ h1 {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     width: 100%;
-    max-width: 500px;
-    margin-bottom: 2rem;
 }
 
 .style-btn {
-    aspect-ratio: 1.5;
     width: 100%;
-    padding: 1rem;
+    padding: 1.5rem;
     border: none;
     border-radius: var(--border-radius);
     background: var(--card-background);
@@ -90,7 +87,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 0.75rem;
 }
 
 .style-btn:hover {
@@ -106,8 +103,7 @@ h1 {
 }
 
 .style-btn .emoji {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.75rem;
 }
 
 .message-container {
@@ -130,7 +126,6 @@ h1 {
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    margin-bottom: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -154,6 +149,7 @@ h1 {
     align-items: center;
     gap: 0.5rem;
     font-size: 0.9rem;
+    flex-shrink: 0;
 }
 
 .copy-btn:hover {
@@ -234,6 +230,14 @@ h1 {
     
     .main-content {
         padding: 1.5rem;
+    }
+    
+    .style-buttons {
+        grid-template-columns: 1fr;
+    }
+    
+    .style-btn {
+        padding: 1rem;
     }
     
     h1 {
