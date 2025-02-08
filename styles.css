@@ -54,29 +54,36 @@ h1 {
 }
 
 .style-buttons {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 15px;
-    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 300px;
 }
 
 .style-btn {
-    padding: 12px 20px;
-    border: 2px solid transparent;
-    background-color: rgba(139, 92, 246, 0.1);
+    width: 100%;
+    padding: 1rem;
+    border: none;
     border-radius: var(--border-radius);
-    cursor: pointer;
-    font-size: 1rem;
-    transition: var(--transition);
+    background: var(--card-background);
     color: var(--text-color);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
 }
 
 .style-btn:hover {
-    background-color: rgba(139, 92, 246, 0.2);
+    background: rgba(139, 92, 246, 0.2);
 }
 
 .style-btn.active {
-    background-color: var(--primary-color);
+    background: var(--primary-color);
     color: white;
 }
 
