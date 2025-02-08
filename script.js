@@ -1,52 +1,52 @@
 // Messages for each style
 const messages = {
     mystical: [
-        "My crystals told me it's time for a new adventure (they're usually right) ✨",
-        "Mercury isn't even in retrograde, but I still gotta go 🌠",
-        "Plot twist: my tarot cards say I'm the main character somewhere else 🔮",
-        "Checking my cosmic calendar... yep, time for a change! 🌙",
-        "My aura needs a change of scenery (and better lighting) 🌈",
-        "The universe is my GPS, and it's recalculating my route 🧭",
-        "My zodiac sign said 'thank u, next' 💫",
-        "Manifesting new beginnings like it's my spiritual side hustle ⭐",
-        "The full moon told me to level up, who am I to argue? 🌕",
-        "Aligning my chakras with a different timezone 🧘‍♀️"
+        "Just checked our zodiac compatibility... looks like we're a cosmic mismatch ✨",
+        "The stars whispered something about 'right person, wrong constellation' 🌟",
+        "My crystal ball is showing separate paths (and better lighting elsewhere) 🔮",
+        "Mercury isn't in retrograde, but our connection might be 🌠",
+        "Checked my birth chart - apparently it's time for a plot twist 🌙",
+        "The universe sent me a DM, and well... it's complicated 💫",
+        "My tarot cards just pulled the 'thank u, next' card 🎴",
+        "Seems our energies are on different spiritual podcasts 🧘‍♀️",
+        "The cosmos called - they're requesting a realignment 🌌",
+        "My aura reader suggested I try new wavelengths 🌈"
     ],
     growth: [
-        "Like my houseplants, I need more room to grow (and better sunlight) 🌱",
-        "Time to repot myself into a bigger adventure 🪴",
-        "My comfort zone is getting a bit too comfy - time to stretch! 🦋",
-        "Growing faster than my succulent collection 🌵",
-        "My personal growth spurt needs more space than this office chair 🪑",
-        "Leveling up like my sourdough starter - it's alive! 🍞",
-        "My growth mindset is bigger than my current situation 🚀",
-        "Like my favorite tree, I'm branching out 🌳",
-        "This caterpillar is ready for its butterfly era 🦋",
-        "Outgrowing this space like my overwatered monstera 🌿"
+        "My plants are getting jealous of all the attention I'm giving you 🌿",
+        "Need to repot myself into a different growth environment 🪴",
+        "My personal development playlist needs a refresh 🎧",
+        "This butterfly needs a different kind of garden 🦋",
+        "Time to water some opportunities in new soil 🌱",
+        "My growth mindset is calling for a location update 🚀",
+        "Like my succulents, I need more space to flourish 🌵",
+        "My self-improvement journey needs a new chapter 📖",
+        "Evolution is calling, and I must answer 🦋",
+        "Ready to bloom in a different botanical garden 🌺"
     ],
     timing: [
-        "My calendar said it's time for the next episode 📅",
-        "Setting my out-of-office reply to 'permanently seeking adventure' ⏰",
-        "My watch says it's time for a life upgrade 🕰️",
-        "Scheduling a plot twist in my career timeline ⌛",
-        "My Google Calendar needs a whole new color code 📱",
-        "Time to hit fast-forward on my next chapter 🎬",
-        "My biological clock is ticking... for new adventures! 🕐",
-        "Marking this as a turning point in my life's timeline ✨",
-        "The clock struck 'follow your dreams' o'clock 🌟",
-        "Setting my life's alarm to 'new beginnings' mode 🔔"
+        "Actually swamped with work these days, might not be the best time for connections 🙏",
+        "Just found out I'm relocating soon - timing's not ideal 🌍",
+        "My calendar is having an existential crisis 📅",
+        "Time zones are suggesting we sync differently ⏰",
+        "My schedule is entering its villain era 🕰️",
+        "The timing department called - they're filing for changes 📋",
+        "Currently in a long-term relationship with my deadlines ⌛",
+        "My Google Calendar is staging an intervention 📱",
+        "Time management sent me a breakup note 🗓️",
+        "Scheduling conflicts are my new personality trait ⏳"
     ],
     fun: [
-        "My Spotify wrapped is about to get way more interesting 🎵",
-        "Upgrading my life's software to version 2.0 💻",
-        "My Netflix algorithm needs new recommendations 🍿",
-        "Speedrunning to my next adventure 🎮",
-        "Going offline here to load new content elsewhere 🔄",
-        "Time to shuffle my life's playlist 🎧",
-        "Rage quitting this level for better gameplay 🎲",
-        "My life's podcast needs a new season 🎙️",
-        "Switching channels to find better content 📺",
-        "Achievement unlocked: Freedom Seeker Mode 🏆"
+        "I need some time to debug my personal algorithm 💻",
+        "Looks like we're running on different operating systems 🤖",
+        "My life's playlist needs a genre update 🎵",
+        "Currently beta testing a new version of myself 🔄",
+        "Error 404: Compatible future not found 🖥️",
+        "Initiating graceful exit protocol... 🎮",
+        "Plot twist: I'm the protagonist in a different story 🎬",
+        "My character arc needs some creative direction 🎯",
+        "Switching servers to find better ping 🌐",
+        "Achievement unlocked: New chapter loading... 🏆"
     ]
 };
 
