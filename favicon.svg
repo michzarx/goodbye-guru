@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="32" height="32" rx="8" fill="#F3F4F6"/>
+  
+  <!-- Main letter 'G' -->
+  <path d="M22 12C22 16.5 18 17 16 17C14 17 10 16.5 10 12C10 7.5 14 7 16 7C18 7 22 7.5 22 12Z" fill="#6366F1"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="24" cy="8" r="2" fill="#EC4899"/>
+  <circle cx="8" cy="24" r="2" fill="#EC4899"/>
+  
+  <!-- Sparkles -->
+  <path d="M20 20L22 22M22 20L20 22" stroke="#6366F1" stroke-width="2" stroke-linecap="round"/>
+  <path d="M10 10L12 12M12 10L10 12" stroke="#6366F1" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Additional decorative dots -->
+  <circle cx="16" cy="24" r="1.5" fill="#6366F1"/>
+  <circle cx="16" cy="8" r="1.5" fill="#6366F1"/>
+</svg>
